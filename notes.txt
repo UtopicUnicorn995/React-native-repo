@@ -1,0 +1,13 @@
+create new project: npx create-expo-app@latest
+start server: npx expo start
+start server with tunnel: npx expo start --tunnel
+remove boilerplate: npm run reset-project
+
+Text and views are native elements
+
+react native have no CSS
+inline styles
+Stylesheet Objects
+
+
+Views components only holds components -> Does not show them
