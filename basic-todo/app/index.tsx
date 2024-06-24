@@ -1,22 +1,30 @@
-import { Text, View, Button, StyleSheet } from "react-native";
-import { StatusBar } from "expo-status-bar";
+import { Text, View, Button, StyleSheet, TextInput } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={styles.container}
-    >
-      <Text>Hello world</Text>
-      <Text>fb.com</Text>
-      <Button title="fb.com"/>
+    <View style={styles.appContainer}>
+      <View style={styles.inputContainer}>
+        <TextInput placeholder="Your course goal!" />
+        <Button title="Add goal" />
+      </View>
+      <View>
+        <Text>List of goals...</Text>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
- container:{
-  flex: 1,
-  justifyContent: "center",
-  alignItems: "center",
- }
-})
+  appContainer: {
+    padding: 50
+  },
+  inputContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between'
+  },
+  textInput: {
+    borderWidth: 1,
+    borderColor: '#ccc',
+    width: '80%'
+  }
+});
