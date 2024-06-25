@@ -1,5 +1,6 @@
 create new project: npx create-expo-app@latest
-start server: npx expo start
+
+BETTER OPTION FOR ME: create new project: npx create-expo-app app-name --template blank 
 start server with tunnel: npx expo start --tunnel
 remove boilerplate: npm run reset-project
 
@@ -11,3 +12,7 @@ Stylesheet Objects
 
 
 Views components only holds components -> Does not show them
+
+Button component does not have a style prop
+
+styles does not cascade
