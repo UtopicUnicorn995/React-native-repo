@@ -1,6 +1,11 @@
 create new project: npx create-expo-app@latest
 
 BETTER OPTION FOR ME: create new project: npx create-expo-app app-name --template blank 
+
+expo IP address and pc ip address 
+change expo ip address
+setx /M REACT_NATIVE_PACKAGER_HOSTNAME 192.168.1.2
+
 start server with tunnel: npx expo start --tunnel
 remove boilerplate: npm run reset-project
 
@@ -16,3 +21,4 @@ Views components only holds components -> Does not show them
 Button component does not have a style prop
 
 styles does not cascade
+styles should be small letters
