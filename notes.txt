@@ -4,7 +4,7 @@ BETTER OPTION FOR ME: create new project: npx create-expo-app app-name --templat
 
 expo IP address and pc ip address 
 change expo ip address
-setx /M REACT_NATIVE_PACKAGER_HOSTNAME 192.168.56.1
+setx /M REACT_NATIVE_PACKAGER_HOSTNAME 192.168.1.9
 
 start server with tunnel: npx expo start --tunnel
 remove boilerplate: npm run reset-project
