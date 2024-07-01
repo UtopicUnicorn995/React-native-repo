@@ -12,9 +12,7 @@ import {
 
 export default function App() {
   const [enteredTodo, setEnteredTodo] = useState("");
-  const [todos, setTodos] = useState([
-    { key: "0.35871273266442233", todo: "I" },
-  ]);
+  const [todos, setTodos] = useState([]);
 
   function todoInputHandler(enteredText) {
     setEnteredTodo(enteredText);
