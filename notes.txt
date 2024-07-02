@@ -22,3 +22,7 @@ Button component does not have a style prop
 
 styles does not cascade
 styles should be small letters
+
+eas build --profile development --platform android
+
+creating custom buttons

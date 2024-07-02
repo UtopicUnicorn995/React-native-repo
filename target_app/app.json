@@ -1,12 +1,11 @@
 {
   "expo": {
-    "name": "todo-2",
-    "slug": "todo-2",
+    "name": "target_app",
+    "slug": "target_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "backgroundColor": "#1e085a",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -18,17 +17,11 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#1e085a"
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "a4b75a75-f9dc-488f-976f-fb3b9102b785"
-      }
-    },
-    "owner": "603914"
+    }
   }
 }
