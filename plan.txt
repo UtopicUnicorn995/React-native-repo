@@ -1,0 +1,4 @@
+after target app -> 
+    Make todo-2 connect to mongodb realm
+    add an edit todo function
+    use the app for the future

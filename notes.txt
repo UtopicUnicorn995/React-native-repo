@@ -25,4 +25,6 @@ styles should be small letters
 
 eas build --profile development --platform android
 
-creating custom buttons
+expo has a built in icons
+
+custom fonts can
