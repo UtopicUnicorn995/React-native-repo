@@ -19,6 +19,7 @@ Stylesheet Objects
 Views components only holds components -> Does not show them
 
 Button component does not have a style prop
+Text can have a child Text element but not a view
 
 styles does not cascade
 styles should be small letters
