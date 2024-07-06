@@ -3,7 +3,7 @@
     "name": "target_app",
     "slug": "target_app",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "default",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
@@ -18,18 +18,26 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "target_app.expo.client"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-    [
-      "expo-font",
-      {
-        "fonts": ["node_modules/@expo-google-fonts/inter/Inter_900Black.ttf"]
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "node_modules/@expo-google-fonts/inter/Inter_900Black.ttf"
+          ]
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "abf97463-c29c-44f1-b7eb-192c375841bf"
       }
-    ]
-  ]
+    }
   }
 }

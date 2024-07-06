@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#1e085a"
-      }
+      },
+      "package": "personal.todoapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

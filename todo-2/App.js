@@ -33,40 +33,40 @@ export default function App() {
 
   return (
     <>
-      <StatusBar animated={true} style="dark" />
-      <View style={styles.appContainer}>
-        <Button
-          title="Add New Goal"
-          color="#5e0acc"
-          onPress={startAddGoalHandler}
-        />
-        {modalIsVisible && (
-          <GoalInput
-            onAddGoal={addGoalHandler}
-            onCancel={endAddGoalHandler}
-            visible={modalIsVisible}
+        <StatusBar animated={true} style="light" />
+        <View style={styles.appContainer}>
+          <Button
+            title="Add New Goal"
+            color="#5e0acc"
+            onPress={startAddGoalHandler}
           />
-        )}
-        <View style={styles.goalsContainer}>
-          <FlatList
-            data={courseGoals}
-            renderItem={(itemData) => {
-              console.log(courseGoals);
-              return (
-                <GoalItem
-                  text={itemData.item.text}
-                  id={itemData.item.id}
-                  onDeleteItem={deleteGoalHandler}
-                />
-              );
-            }}
-            keyExtractor={(item, index) => {
-              return item.id;
-            }}
-            alwaysBounceVertical={false}
-          />
+          {modalIsVisible && (
+            <GoalInput
+              onAddGoal={addGoalHandler}
+              onCancel={endAddGoalHandler}
+              visible={modalIsVisible}
+            />
+          )}
+          <View style={styles.goalsContainer}>
+            <FlatList
+              data={courseGoals}
+              renderItem={(itemData) => {
+                console.log(courseGoals);
+                return (
+                  <GoalItem
+                    text={itemData.item.text}
+                    id={itemData.item.id}
+                    onDeleteItem={deleteGoalHandler}
+                  />
+                );
+              }}
+              keyExtractor={(item, index) => {
+                return item.id;
+              }}
+              alwaysBounceVertical={false}
+            />
+          </View>
         </View>
-      </View>
     </>
   );
 }

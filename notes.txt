@@ -29,3 +29,5 @@ eas build --profile development --platform android
 expo has a built in icons
 
 custom fonts can
+
+mongodb+srv://utopicunicorn:<password>@cluster0.swd10xc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
