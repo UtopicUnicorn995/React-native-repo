@@ -49,7 +49,7 @@ export default function StartGameScreen({ onPickedNumber }) {
   const marginTopDistance = height < 420 ? 50 : 100;
 
   return (
-    <ScrollView style={styles.screen}>
+    <ScrollView style={styles.screen} >
     <KeyboardAvoidingView style={styles.screen} behavior="position">
       <View style={[styles.rootContainer, { marginTop: marginTopDistance }]}>
         <Title>Guess My Number</Title>

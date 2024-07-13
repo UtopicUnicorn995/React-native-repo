@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { View, StyleSheet, FlatList, Button } from "react-native";
 import { StatusBar } from "react-native";
+import firestore from '@react-native-firebase/firestore'
+import { firebase } from "./firebase-config";
 
 import GoalItem from "./components/GoalItem";
 import GoalInput from "./components/GoalInput";
