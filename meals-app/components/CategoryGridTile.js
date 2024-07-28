@@ -1,8 +1,9 @@
 import { View, Pressable, Text, StyleSheet, Platform } from "react-native";
+import CardWrapper from "./CardWrapper";
 
 export default function CategoryGridTile({ title, color, onPress }) {
   return (
-    <View style={[styles.gridItem, { backgroundColor: color }]}>
+    <CardWrapper style={{ backgroundColor: color, height: 150 }}>
       <Pressable
         android_ripple={{ color: "#ccc" }}
         style={({ pressed }) => [
@@ -15,7 +16,7 @@ export default function CategoryGridTile({ title, color, onPress }) {
           <Text style={styles.title}>{title}</Text>
         </View>
       </Pressable>
-    </View>
+    </CardWrapper>
   );
 }
 

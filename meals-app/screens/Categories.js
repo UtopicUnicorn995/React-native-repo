@@ -5,7 +5,10 @@ import CategoryGridTile from "../components/CategoryGridTile";
 export default function Categories({ navigation }) {
   function renderCategoryItem(itemData) {
     function pressHandler() {
-      navigation.navigate('OverviewScreen')
+      navigation.navigate('OverviewScreen', {
+        categoryId: itemData.item.id,
+        categoryTitle: itemData.item.title
+      })
     }
     return (
       <CategoryGridTile
